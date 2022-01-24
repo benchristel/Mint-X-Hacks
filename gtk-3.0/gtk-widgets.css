@@ -1894,8 +1894,8 @@ scale.vertical indicator {
  *************/
 
 scrollbar {
-    -GtkScrollbar-has-backward-stepper: 0;
-    -GtkScrollbar-has-forward-stepper: 0;
+    -GtkScrollbar-has-backward-stepper: 1;
+    -GtkScrollbar-has-forward-stepper: 1;
 }
 
 scrollbar.vertical {
