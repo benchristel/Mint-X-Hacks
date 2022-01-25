@@ -93,11 +93,12 @@
 /* Scrollbars */
 
 @define-color scroll_trough_border shade(@theme_bg_color, 0.8);
-@define-color scroll_trough_a alpha(black, 0.15);
-@define-color scroll_trough_b alpha(black, 0.05);
-@define-color scroll_slider_a shade(@theme_bg_color, 1.1);
-@define-color scroll_slider_b shade(@theme_bg_color, 1.02);
-@define-color scroll_slider_c shade(@theme_bg_color, 0.96);
+@define-color scroll_trough_a shade(@theme_base_color, 0.95);
+@define-color scroll_trough_b shade(@theme_base_color, 1.05);
+@define-color scroll_slider_base #adb1ba;
+@define-color scroll_slider_a shade(@scroll_slider_base, 1.12);
+@define-color scroll_slider_b shade(@scroll_slider_base, 0.95);
+@define-color scroll_slider_c shade(@scroll_slider_base, 0.90);
 
 /* Toolbars */
 
