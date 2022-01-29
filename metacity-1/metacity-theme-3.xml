@@ -188,20 +188,34 @@
 	<arc color="C_titlebar_focused_hilight" x="width-10" y="1" width="9" height="7"  start_angle="0" extent_angle="90" />
 </draw_ops>
 
-<draw_ops name="titlebar_bottom_border">
+<draw_ops name="titlebar_bottom_border_focused">
 	<line x1="0" y1="height-1" x2="width" y2="height-1" color="C_border_focused" />
+</draw_ops>
+
+<draw_ops name="titlebar_bottom_border_unfocused">
+	<line x1="0" y1="height-1" x2="width" y2="height-1" color="C_border_unfocused" />
 </draw_ops>
 
 <draw_ops name="titlebar_focused">
 	<include name="titlebar_fill_focused" />
 	<include name="hilight" />
-	<include name="titlebar_bottom_border" />
+	<include name="titlebar_bottom_border_focused" />
 </draw_ops>
 
 <draw_ops name="rounded_titlebar_focused">
 	<include name="titlebar_fill_focused"/>
 	<include name="rounded_hilight"/>
-	<include name="titlebar_bottom_border" />
+	<include name="titlebar_bottom_border_focused" />
+</draw_ops>
+
+<draw_ops name="titlebar_unfocused">
+	<include name="titlebar_fill_unfocused" />
+	<include name="titlebar_bottom_border_unfocused" />
+</draw_ops>
+
+<draw_ops name="rounded_titlebar_unfocused">
+	<include name="titlebar_fill_unfocused"/>
+	<include name="titlebar_bottom_border_unfocused" />
 </draw_ops>
 
 <!-- ::: TITLES ::: -->
@@ -490,7 +504,7 @@
 
 <frame_style name="normal_unfocused" geometry="normal" parent="normal_focused">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="titlebar" draw_ops="titlebar_fill_unfocused" />
+	<piece position="titlebar" draw_ops="rounded_titlebar_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<piece position="overlay" draw_ops="rounded_border_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
