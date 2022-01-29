@@ -1936,21 +1936,21 @@ scrollbar slider {
     min-width: 10px;
     min-height: 10px;
     margin: 1px;
-    border: 1px solid @border;
+    border: 1px solid @scroll_slider_border_light;
+    border-right: 1px solid @scroll_slider_border_dark;
+    border-bottom: 1px solid @scroll_slider_border_dark;
     border-radius: 8px;
     background-clip: padding-box;
     background-color: transparent;
     background-image: linear-gradient(to right,
                                       @scroll_slider_a,
-                                      @scroll_slider_b,
-                                      @scroll_slider_c);
+                                      @scroll_slider_b);
 }
 
 scrollbar.horizontal slider {
     background-image: linear-gradient(to bottom,
                                       @scroll_slider_a,
-                                      @scroll_slider_b,
-                                      @scroll_slider_c);
+                                      @scroll_slider_b);
 }
 
 scrollbar slider.fine-tune {

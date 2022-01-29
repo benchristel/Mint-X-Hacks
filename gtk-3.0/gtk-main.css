@@ -95,10 +95,10 @@
 @define-color scroll_trough_border shade(@theme_bg_color, 0.8);
 @define-color scroll_trough_a shade(@theme_base_color, 0.95);
 @define-color scroll_trough_b shade(@theme_base_color, 1.05);
-@define-color scroll_slider_base #adb1ba;
-@define-color scroll_slider_a shade(@scroll_slider_base, 1.12);
-@define-color scroll_slider_b shade(@scroll_slider_base, 0.95);
-@define-color scroll_slider_c shade(@scroll_slider_base, 0.90);
+@define-color scroll_slider_border_light #687b88;
+@define-color scroll_slider_border_dark #586775;
+@define-color scroll_slider_a #a3b3c2;
+@define-color scroll_slider_b #788fa8;
 
 /* Toolbars */
 
