@@ -93,7 +93,7 @@
 /* Scrollbars */
 
 @define-color scroll_trough_border shade(@theme_bg_color, 0.8);
-@define-color scroll_trough_a shade(@theme_base_color, 0.95);
+@define-color scroll_trough_a shade(@theme_base_color, 0.90);
 @define-color scroll_trough_b shade(@theme_base_color, 1.05);
 @define-color scroll_slider_border_light #687b88;
 @define-color scroll_slider_border_dark #586775;

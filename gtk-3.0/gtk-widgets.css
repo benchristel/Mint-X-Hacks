@@ -1902,6 +1902,7 @@ scrollbar.vertical {
     border-style: solid;
     border-color: alpha(@border, 0.5);
     border-width: 0 0 0 1px;
+    box-shadow: inset 1px 0 3px alpha(#000, 0.25);
     background-image: linear-gradient(to right,
                                       @scroll_trough_a,
                                       @scroll_trough_b);
@@ -1911,6 +1912,7 @@ scrollbar.horizontal {
     border-style: solid;
     border-color: alpha(@border, 0.5);
     border-width: 1px 0 0 0;
+    box-shadow: inset 0 1px 3px alpha(#000, 0.25);
     background-image: linear-gradient(to bottom,
                                       @scroll_trough_a,
                                       @scroll_trough_b);
