@@ -268,27 +268,27 @@
 <!-- close icon -->
 
 <draw_ops name="close_focused">
-    <image filename="close-focus-normal.svg"
+    <image filename="red-gem.png"
         x="(width-object_width)/2"
-        y="0"
-        width="width-(width-width%3)/3"
-        height="height"/>
+        y="(height-object_height)/2"
+        width="object_width"
+        height="object_height"/>
 </draw_ops>
 
 <draw_ops name="close_unfocused">
-	<image filename="close-focus-none.svg"
+	<image filename="gray-gem.png"
         x="(width-object_width)/2"
-        y="0"
-        width="width-(width-width%3)/3"
-        height="height"/>
+        y="(height-object_height)/2"
+        width="object_width"
+        height="object_height"/>
 </draw_ops>
 
 <draw_ops name="close_focused_prelight">
-	<image filename="close-focus.svg"
+	<image filename="red-gem.png"
         x="(width-object_width)/2"
-        y="0"
-        width="width-(width-width%3)/3"
-        height="height"/>
+        y="(height-object_height)/2"
+        width="object_width"
+        height="object_height"/>
 </draw_ops>
 
 <!-- maximize icon -->
