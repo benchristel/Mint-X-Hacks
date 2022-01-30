@@ -1770,11 +1770,11 @@ scale slider {
 }
 
 scale slider {
-    border: 1px solid @border;
+    border: 1px solid @button_border;
     border-radius: 50%;
     background-image: linear-gradient(to bottom,
                                       shade(@button_bg_a, 1.1),
-                                      shade(@button_bg_b, 1.1));
+                                      shade(@button_bg_b, 1.0));
 }
 
 scale slider:disabled {
@@ -1793,9 +1793,9 @@ scale.fine-tune trough {
 }
 
 scale trough {
-    border: 1px solid @border;
+    border: 1px solid @button_border;
     border-radius: 3px;
-    background-color: shade(@theme_bg_color, 0.95);
+    background-color: shade(@theme_bg_color, 0.80);
     background-image: none;
     box-shadow: inset 1px 1px alpha(black, 0.1),
                       0 1px alpha(white, 0.5);

@@ -87,7 +87,7 @@
 @define-color scale_slider_insensitive_b shade(@theme_bg_color, 0.9);
 @define-color scale_trough_a shade(@theme_bg_color, 0.8);
 @define-color scale_trough_b @theme_bg_color;
-@define-color scale_fill_a shade(@theme_selected_bg_color, 1.1);
+@define-color scale_fill_a shade(@theme_selected_bg_color, 1.4);
 @define-color scale_fill_b shade(@theme_selected_bg_color, 0.94);
 
 /* Scrollbars */
