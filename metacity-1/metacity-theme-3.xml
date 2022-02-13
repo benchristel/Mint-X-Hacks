@@ -298,7 +298,7 @@
 </draw_ops>
 
 <draw_ops name="close_focused_prelight">
-	<image filename="red-gem.png"
+	<image filename="red-gem-close.png"
         x="(width-object_width)/2"
         y="(height-object_height)/2"
         width="object_width"
