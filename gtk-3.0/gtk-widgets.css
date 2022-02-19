@@ -313,8 +313,8 @@ check,
 .check,
 radio
 .radio {
-    min-width: 16px;
-    min-height: 16px;
+    min-width: 18px;
+    min-height: 18px;
     margin: 0;
     background-color: transparent;
 }
@@ -326,7 +326,8 @@ radiobutton.text-button {
 
 checkbutton label,
 radiobutton label {
-    padding-bottom: 1px;
+    padding-top: 2px;
+    padding-bottom: 0px;
 }
 
 checkbutton label:not(:only-child):last-child,
