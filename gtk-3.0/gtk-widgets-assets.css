@@ -11,7 +11,10 @@ check row:selected:focus {
 
 check:disabled,
 check row:selected:disabled,
-check row:selected:focus:disabled {
+check row:selected:focus:disabled,
+check:backdrop,
+check row:selected:backdrop,
+check row:selected:focus:backdrop {
     -gtk-icon-source: url("assets/checkbox-unchecked-insensitive.png");
     -gtk-icon-shadow: none;
 }
@@ -25,7 +28,10 @@ check row:selected:focus:checked {
 
 check:checked:disabled,
 check row:selected:checked:disabled,
-check row:selected:focus:checked:disabled {
+check row:selected:focus:checked:disabled,
+check:checked:backdrop,
+check row:selected:checked:backdrop,
+check row:selected:focus:checked:backdrop {
     -gtk-icon-source: url("assets/checkbox-checked-insensitive.png");
     -gtk-icon-shadow: none;
 }
@@ -39,7 +45,10 @@ check row:selected:focus:indeterminate {
 
 check:indeterminate:disabled,
 check row:selected:indeterminate:disabled,
-check row:selected:focus:indeterminate:disabled {
+check row:selected:focus:indeterminate:disabled,
+check:indeterminate:backdrop,
+check row:selected:indeterminate:backdrop,
+check row:selected:focus:indeterminate:backdrop {
     -gtk-icon-source: url("assets/checkbox-mixed-insensitive.png");
     -gtk-icon-shadow: none;
 }
@@ -65,7 +74,10 @@ radio row:selected:focus {
 
 radio:disabled,
 radio row:selected:disabled,
-radio row:selected:focus:disabled {
+radio row:selected:focus:disabled,
+radio:backdrop,
+radio row:selected:backdrop,
+radio row:selected:focus:backdrop {
     -gtk-icon-source: url("assets/radio-unselected-insensitive.png");
     -gtk-icon-shadow: none;
 }
@@ -79,7 +91,10 @@ radio row:selected:focus:checked {
 
 radio:checked:disabled,
 radio row:selected:checked:disabled,
-radio row:selected:focus:checked:disabled {
+radio row:selected:focus:checked:disabled,
+radio:checked:backdrop,
+radio row:selected:checked:backdrop,
+radio row:selected:focus:checked:backdrop {
     -gtk-icon-source: url("assets/radio-selected-insensitive.png");
     -gtk-icon-shadow: none;
 }
@@ -93,7 +108,10 @@ radio row:selected:focus:indeterminate {
 
 radio:indeterminate:disabled,
 radio row:selected:indeterminate:disabled,
-radio row:selected:focus:indeterminate:disabled {
+radio row:selected:focus:indeterminate:disabled,
+radio:indeterminate:backdrop,
+radio row:selected:indeterminate:backdrop,
+radio row:selected:focus:indeterminate:backdrop {
     -gtk-icon-source: url("assets/radio-mixed-insensitive.png");
     -gtk-icon-shadow: none;
 }
