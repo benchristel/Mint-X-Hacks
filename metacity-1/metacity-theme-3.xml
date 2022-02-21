@@ -324,7 +324,7 @@
 </draw_ops>
 
 <draw_ops name="maximize_focused_prelight">
-	<image filename="green-gem.png"
+	<image filename="green-gem-maximize.png"
         x="(width-object_width)/2"
         y="(height-object_height)/2"
         width="object_width"
@@ -350,7 +350,7 @@
 </draw_ops>
 
 <draw_ops name="minimize_focused_prelight">
-	<image filename="yellow-gem.png"
+	<image filename="yellow-gem-minimize.png"
         x="(width-object_width)/2"
         y="(height-object_height)/2"
         width="object_width"
