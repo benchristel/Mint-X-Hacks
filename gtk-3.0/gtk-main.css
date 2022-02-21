@@ -4,7 +4,7 @@
 @define-color theme_fg_color #212121;
 @define-color theme_base_color #f7f7f7;
 @define-color theme_text_color #212121;
-@define-color theme_selected_bg_color shade(#419be1, 0.90);
+@define-color theme_selected_bg_color shade(#419be1, 0.88);
 @define-color theme_selected_fg_color #fff;
 @define-color theme_tooltip_bg_color #fbeaa0;
 @define-color theme_tooltip_fg_color #212121;

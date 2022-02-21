@@ -1,5 +1,5 @@
-@define-color nemo_sidebar_bg #505050;
-@define-color nemo_sidebar_fg #dadada;
+@define-color nemo_sidebar_bg #dee4ea;
+@define-color nemo_sidebar_fg #101010;
 @define-color nemo_sidebar_selected_fg #fff;
 
 /********
@@ -17,6 +17,7 @@
 
 .nemo-window .sidebar .view:selected {
     border-color: @nemo_sidebar_bg;
+    background: linear-gradient(to bottom, shade(@theme_selected_bg_color, 1.2), shade(@theme_selected_bg_color, 0.9));
     color: @nemo_sidebar_selected_fg;
     text-shadow: 1px 1px alpha(black, 0.2);
     -gtk-icon-shadow: 1px 1px alpha(black, 0.2);
