@@ -31,9 +31,9 @@
 	<distance name="left_titlebar_edge" value="6"/>
 	<distance name="right_titlebar_edge" value="6"/>
 	<distance name="title_vertical_pad" value="0"/>
-	<border name="title_border" left="2" right="2" top="5" bottom="5"/>
+	<border name="title_border" left="2" right="2" top="7" bottom="4"/>
 	<border name="button_border" left="0" right="0" top="3" bottom="0"/>
-	<aspect_ratio name="button" value="1"/>
+	<aspect_ratio name="button" value="0.95"/>
 </frame_geometry>
 
 <frame_geometry name="maximized" parent="normal" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
