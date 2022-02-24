@@ -10,11 +10,13 @@
 
 <!-- ::: CONSTANTS ::: -->
 
-<constant name="C_border_focused" value="#515151" />
+<constant name="C_border_focused" value="#707070" />
+<constant name="C_titlebar_bottom_border_focused" value="#515151" />
 <constant name="C_border_unfocused" value="#a2a2a2" />
-<constant name="C_title_focused" value="#222222"/>
-<constant name="C_title_focused_highlight" value="#d0d0d0"/>
-<constant name="C_title_unfocused" value="shade/gtk:bg[NORMAL]/0.80"/>
+<constant name="C_titlebar_bottom_border_unfocused" value="#999999" />
+<constant name="C_title_focused" value="#000000"/>
+<constant name="C_title_focused_highlight" value="#cccccc"/>
+<constant name="C_title_unfocused" value="#5c5c5c"/>
 <constant name="C_titlebar_bg" value="gtk:bg[NORMAL]"/>
 <constant name="C_titlebar_focused_hilight" value="#eeeeee" />
 <constant name="C_icon_focused" value="shade/gtk:bg[NORMAL]/0.75"/>
@@ -30,8 +32,8 @@
 	<distance name="bottom_height" value="1" />
 	<distance name="left_titlebar_edge" value="6"/>
 	<distance name="right_titlebar_edge" value="6"/>
-	<distance name="title_vertical_pad" value="0"/>
-	<border name="title_border" left="2" right="2" top="7" bottom="4"/>
+	<distance name="title_vertical_pad" value="4"/>
+	<border name="title_border" left="2" right="2" top="5" bottom="2"/>
 	<border name="button_border" left="0" right="0" top="3" bottom="0"/>
 	<aspect_ratio name="button" value="0.95"/>
 </frame_geometry>
@@ -109,15 +111,20 @@
 </draw_ops>
 
 <draw_ops name="rounded_border_focused">
-	<line color="C_border_focused" x1="4" y1="0" x2="width-5" y2="0" />
-	<line color="C_border_focused" x1="0" y1="height-1" x2="width-1" y2="height-1" />
-	<line color="C_border_focused" x1="0" y1="4" x2="0" y2="height-2" />
-	<line color="C_border_focused" x1="width-1" y1="4" x2="width-1" y2="height-2" />
-	<arc color="C_border_focused" x="0" y="0" width="9" height="9"  start_angle="270" extent_angle="90" />
-	<arc color="C_border_focused" x="width-10" y="0" width="9" height="9"  start_angle="0" extent_angle="90" />
+	<!-- top border -->
+	<line color="#888888" x1="4" y1="0" x2="width-5" y2="0" />
+	<!-- bottom border -->
+	<line color="#515151" x1="0" y1="height-1" x2="width-1" y2="height-1" />
+	<!-- left border -->
+	<line color="#777777" x1="0" y1="4" x2="0" y2="height-2" />
+	<!-- right border -->
+	<line color="#777777" x1="width-1" y1="4" x2="width-1" y2="height-2" />
+	<!-- top corners -->
+	<arc color="#7f7f7f" x="0" y="0" width="9" height="9"  start_angle="270" extent_angle="90" />
+	<arc color="#7f7f7f" x="width-10" y="0" width="9" height="9"  start_angle="0" extent_angle="90" />
 	<!-- double arcs for darker borders -->
-	<arc color="C_border_focused" x="0" y="0" width="9" height="9"  start_angle="270" extent_angle="90" />
-	<arc color="C_border_focused" x="width-10" y="0" width="9" height="9"  start_angle="0" extent_angle="90" />
+	<arc color="#7f7f7f" x="0" y="0" width="9" height="9"  start_angle="270" extent_angle="90" />
+	<arc color="#7f7f7f" x="width-10" y="0" width="9" height="9"  start_angle="0" extent_angle="90" />
 </draw_ops>
 
 <draw_ops name="rounded_border_unfocused">
@@ -137,28 +144,28 @@
 	<line
 		x1="width-1" y1="0" 
 		x2="width-1" y2="height" 
-		color="C_border_focused" />
+		color="#404040" />
 </draw_ops>
 
 <draw_ops name="border_tiled_left_unfocused">
 	<line
 		x1="width-1" y1="0" 
 		x2="width-1" y2="height" 
-		color="C_border_unfocused" />
+		color="#404040" />
 </draw_ops>
 
 <draw_ops name="border_tiled_right_focused">
 	<line
 		x1="0" y1="0" 
 		x2="0" y2="height" 
-		color="C_border_focused" />
+		color="#404040" />
 </draw_ops>
 
 <draw_ops name="border_tiled_right_unfocused">
 	<line
 		x1="0" y1="0" 
 		x2="0" y2="height" 
-		color="C_border_unfocused" />
+		color="#404040" />
 </draw_ops>
 
 <!-- ::: TITLEBAR ::: -->
@@ -171,15 +178,14 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_unfocused">
-	<rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height" filled="true"/>
+	<gradient type="vertical" x="0" y="0" width="width" height="height">
+		<color value="#f2f2f2"/>
+		<color value="#d8d8d8"/>
+	</gradient>
 </draw_ops>
 
 <draw_ops name="hilight">
 	<line x1="0" y1="1" x2="width-1" y2="1" color="C_titlebar_focused_hilight" />
-	<gradient type="vertical" x="1" y="1" width="1" height="height-4">
-		<color value="C_titlebar_focused_hilight" />
-		<color value="blend/gtk:bg[NORMAL]/#000000/0.03" />
-	</gradient>
 </draw_ops>
 
 <draw_ops name="rounded_hilight">
@@ -189,11 +195,11 @@
 </draw_ops>
 
 <draw_ops name="titlebar_bottom_border_focused">
-	<line x1="0" y1="height-1" x2="width" y2="height-1" color="C_border_focused" />
+	<line x1="0" y1="height-1" x2="width" y2="height-1" color="C_titlebar_bottom_border_focused" />
 </draw_ops>
 
 <draw_ops name="titlebar_bottom_border_unfocused">
-	<line x1="0" y1="height-1" x2="width" y2="height-1" color="C_border_unfocused" />
+	<line x1="0" y1="height-1" x2="width" y2="height-1" color="C_titlebar_bottom_border_unfocused" />
 </draw_ops>
 
 <draw_ops name="titlebar_focused">
@@ -519,14 +525,14 @@
 
 <frame_style name="maximized_focused" geometry="maximized" parent="normal_focused">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="titlebar" draw_ops="titlebar_fill_focused" />
+	<piece position="titlebar" draw_ops="titlebar_focused" />
 	<piece position="title" draw_ops="title_focused" />
 	<piece position="overlay"><draw_ops></draw_ops></piece>
 </frame_style>
 
 <frame_style name="maximized_unfocused" geometry="maximized" parent="normal_unfocused">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="titlebar" draw_ops="titlebar_fill_unfocused" />
+	<piece position="titlebar" draw_ops="titlebar_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<piece position="overlay"><draw_ops></draw_ops></piece>
 </frame_style>
