@@ -15,3 +15,17 @@ Symlink this directory into `~/.themes/`.
 
 To reorder the window titlebar buttons to match Mac OSX, install `dconf-editor`, run it,
 and edit the setting `org.cinnamon.desktop.wm.preferences.button_layout`.
+
+## Development
+
+You'll probably want the GTK inspector for debugging. Run:
+
+```
+apt install libgtk-3-dev
+apt install dconf-editor
+```
+
+And enable the inspector by running `dconf-editor` and changing
+`org.gtk.Settings.Debug.enable-inspector-keybinding` to `true`.
+
+Then you can hit `ctrl+shift+I` in any GTK app to open the inspector.
