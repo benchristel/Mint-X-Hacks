@@ -100,13 +100,13 @@ assistant .sidebar label.highlight {
  **********/
 button,
 button.menuitem.menubar {
-    min-height: 18px;
+    min-height: 20px;
     min-width: 14px;
-    padding: 4px 7px;
+    padding: 2px 4px 0px;
 }
 
 button.image-button {
-    padding: 4px;
+    padding: 1px 4px 1px;
 }
 
 .dialog-action-area button.text-button {
@@ -1625,7 +1625,7 @@ paned > separator {
     -gtk-icon-source: none;
     border-style: none;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, @border, @border);
+    background-image: linear-gradient(to bottom, @heavy_border, @heavy_border);
     background-size: 1px 1px;
 }
 
@@ -2116,8 +2116,8 @@ searchbar {
  * sidebar *
  ***********/
 
-.sidebar {
-    background-color: @theme_base_color;
+.sidebar, treeview.sidebar {
+    background-color: #dee4ea;
     border-style: none;
 }
 
@@ -2368,7 +2368,7 @@ switch {
     font-weight: bold;
     font-size: smaller;
     min-width: 52px;
-    min-height: 24px;
+    min-height: 20px;
 }
 
 switch {
@@ -2496,6 +2496,10 @@ treeview.view {
     border-top-color: @border;
     border-right: 1px solid alpha(#000, 0.1);
     padding: 1px;
+}
+
+treeview.view header button {
+    min-height: 16px;
 }
 
 treeview.view:selected {
