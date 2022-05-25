@@ -2116,7 +2116,7 @@ searchbar {
  * sidebar *
  ***********/
 
-.sidebar, treeview.sidebar {
+.sidebar, treeview.view.sidebar {
     background-color: #dee4ea;
     border-style: none;
 }
@@ -2525,6 +2525,27 @@ treeview.view:drop(active).after {
 
 treeview.view:drop(active).before {
     border-bottom-style: none;
+}
+
+treeview.view {
+  background-color: #fff;
+}
+
+/* zebra stripes */
+treeview.view.even:not(:selected) {
+    background-color: #edf3ff;
+}
+
+treeview.view.odd:not(:selected) {
+    background-color: #ffffff;
+}
+
+/* no zebra stripes in sidebars */
+.sidebar treeview.view.even:not(:selected),
+.sidebar treeview.view.odd:not(:selected),
+.caja-side-pane treeview.view.even:not(:selected),
+.caja-side-pane treeview.view.odd:not(:selected) {
+  background-color: inherit;
 }
 
 /************
