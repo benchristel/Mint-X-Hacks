@@ -14,5 +14,6 @@ ln -sf $SCRIPT_DIR/osx-gtk-overrides.css ~/.config/gtk-3.0/osx-gtk-overrides.css
 
 # Install fonts
 tar -xzf fonts.tgz
+mkdir -p ~/.local/share/fonts
 mv fonts/* ~/.local/share/fonts
 rm -rf fonts
