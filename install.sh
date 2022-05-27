@@ -10,9 +10,10 @@ mkdir -p ~/.config/gtk-3.0
 if ! grep -qs osx-gtk-overrides ~/.config/gtk-3.0/gtk.css; then
   echo '@import url("osx-gtk-overrides.css");' >> ~/.config/gtk-3.0/gtk.css
 fi
-ln -sf $SCRIPT_DIR/osx-gtk-overrides.css ~/.config/gtk-3.0/osx-gtk-overrides.css
+ln -sf "$SCRIPT_DIR/osx-gtk-overrides.css" ~/.config/gtk-3.0/osx-gtk-overrides.css
 
 # Install fonts
+cd "$SCRIPT_DIR"
 tar -xzf fonts.tgz
 mkdir -p ~/.local/share/fonts
 mv fonts/* ~/.local/share/fonts
