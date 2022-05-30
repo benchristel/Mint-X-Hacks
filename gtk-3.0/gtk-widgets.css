@@ -2556,27 +2556,6 @@ viewport {
     background-color: transparent;
 }
 
-.view:selected,
-iconview:selected,
-.view:selected:focus,
-iconview:selected:focus,
-.view text:selected,
-iconview text:selected,
-textview text:selected,
-.view text:selected:focus,
-iconview text:selected:focus,
-textview text:selected:focus,
-.view text selection:focus,
-iconview text selection:focus,
-.view text selection,
-iconview text selection,
-textview text selection:focus,
-textview text selection,
-entry selection:focus,
-entry selection {
-    background-color: @theme_selected_bg_color;
-}
-
 flowbox flowboxchild:selected,
 flowbox flowboxchild:selected:focus,
 row:selected label,
@@ -2585,7 +2564,11 @@ label selection,
 .view:selected,
 iconview:selected,
 .view:selected:focus,
-iconview:selected:focus,
+iconview:selected:focus {
+    color: @theme_selected_fg_color;
+    background-color: @theme_selected_bg_color;
+}
+
 .view text:selected,
 iconview text:selected,
 textview text:selected,
@@ -2600,8 +2583,8 @@ textview text selection:focus,
 textview text selection,
 entry selection:focus,
 entry selection {
-    color: @theme_selected_fg_color;
-    background-color: @theme_selected_bg_color;
+    color: @theme_selected_text_fg_color;
+    background-color: @theme_selected_text_bg_color;
 }
 
 label:disabled:selected,
