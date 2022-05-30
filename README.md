@@ -15,6 +15,9 @@ Clone this repo into `~/.themes/`. Then run the `install.sh` script.
 
 ## Development
 
+To reload the theme, run `./swap-themes.sh`. This will briefly swap the theme
+to a different one and back to `osx`. Most apps will redraw in response.
+
 You'll probably want the GTK inspector for debugging. Run:
 
 ```
