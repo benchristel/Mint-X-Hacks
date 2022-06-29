@@ -369,7 +369,7 @@ StScrollBar StButton#vhandle:hover {
 .panel-top,
 .panel-bottom {
     background-gradient-direction: vertical;
-    background-gradient-start: rgb(246, 246, 246);
+    background-gradient-start: rgb(255, 255, 255);
     background-gradient-end: rgb(206, 206, 206);
     box-shadow: 0px 0px 1px 1px rgba(40, 40, 40, 0.4);
 }
@@ -589,6 +589,12 @@ StScrollBar StButton#vhandle:hover {
 /* ===================================================================
  * Date applet (calendar@cinnamon.org/calendar.js)
  * ===================================================================*/
+
+.calendar-cinnamon-org-applet {
+  /* hack to visually center the clock within the panel */
+  border-top: 3px solid transparent;
+}
+
 .calendar {
     /*margin-bottom: .5em;*/
     /*margin: 0 1.0em 0 0.5em;*/
@@ -1997,11 +2003,23 @@ StScrollBar StButton#vhandle:hover {
 .applet-box {
     font-weight: bold;
     color: rgb(74, 74, 74);
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-top: 1px;
     spacing: 3px;
     text-align: center;
+}
+
+.panelLeft .menu-cinnamon-org-applet,
+.panelLeft .user-cinnamon-org-applet {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.panelRight .menu-cinnamon-org-applet,
+.panelRight .user-cinnamon-org-applet {
+    padding-right: 15px;
+    padding-left: 10px;
 }
 
 .applet-box.vertical {
@@ -2010,24 +2028,21 @@ StScrollBar StButton#vhandle:hover {
     padding-bottom: 5px;
 }
 
-.applet-box:checked,
-.applet-box:hover {
-    border-image: url("panel-assets/hover-1.svg") 6;
+.applet-box:checked {
+    background-color: #419be1;
+    color: #fff;
 }
 
 .panel-top .applet-box:checked,
 .panel-top .applet-box:hover {
-    border-image: url("panel-assets/hover-1-top.svg") 6;
 }
 
 .panel-left .applet-box:checked,
 .panel-left .applet-box:hover {
-    border-image: url("panel-assets/hover-1-left.svg") 6;
 }
 
 .panel-right .applet-box:checked,
 .panel-right .applet-box:hover {
-    border-image: url("panel-assets/hover-1-right.svg") 6;
 }
 
 .applet-box:highlight {
