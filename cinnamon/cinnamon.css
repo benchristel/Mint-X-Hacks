@@ -2053,13 +2053,14 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .applet-label {
-    font-weight: bold;
-    color: rgb(66, 66, 66);
+    font-weight: normal;
+    color: #000;
+    text-shadow: 0 1px #fff;
 }
 
-.applet-label:checked,
-.applet-label:hover {
-    font-weight: bold;
+.applet-box:checked .applet-label {
+    color: #fff;
+    text-shadow: none;
 }
 
 .applet-icon {
