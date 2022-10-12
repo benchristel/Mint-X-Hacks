@@ -28,6 +28,10 @@
     color: @nemo_sidebar_selected_fg;
 }
 
+.nemo-window .sidebar treeview.view {
+    border-right: none;
+}
+
 .nemo-window .places-treeview {
     -NemoPlacesTreeView-disk-full-bg-color: shade(@theme_base_color, 0.85);
     -NemoPlacesTreeView-disk-full-fg-color: shade(@theme_selected_bg_color, 0.9);
