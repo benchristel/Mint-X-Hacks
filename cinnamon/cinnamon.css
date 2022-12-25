@@ -129,54 +129,44 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 .menu {
-    background-color: #ececec;
+    background-color: rgba(247, 247, 247, 0.95);
     border-width: 1px;
-    border-color: rgba(40, 40, 40, 0.3);
+    border-color: #8b8b8b;
     color: rgb(70, 70, 70);
     min-width: 100px;
 }
 
-.menu.top {
-    border-radius: 0 0 4px 4px;
-}
-
-.menu.bottom {
-    border-radius: 4px 4px 0 0;
-}
-
-.menu.left {
-    border-radius: 0 4px 4px 0;
-}
-
-.menu.right {
-    border-radius: 4px 0 0 4px;
+.menu.top, .menu.bottom, .menu.left, .menu.right {
+    border-radius: 0;
 }
 
 .menu StEntry {
-    padding: 4px 12px;
+    padding: 4px 8px;
     color: #2b2b2b;
     border-image: url("misc-assets/entry.png") 6;
     border-radius: 4px;
     width: 250px;
-    min-height: 16px;
+    min-height: 20px;
+    font-size: 14px;
     selected-color: #fff;
     caret-color: #2b2b2b;
     caret-size: 1px;
-    selection-background-color: #accd8a;
+    selection-background-color: #3b77da;
     transition-duration: 150;
 }
 
 .menu StEntry:focus {
-    padding: 4px 12px;
+    padding: 4px 8px;
     color: #2b2b2b;
     border-image: url("misc-assets/entry-focus.png") 6;
     border-radius: 4px;
     width: 250px;
-    min-height: 16px;
+    min-height: 20px;
+    font-size: 14px;
     selected-color: #fff;
     caret-color: #2b2b2b;
     caret-size: 1px;
-    selection-background-color: #accd8a;
+    selection-background-color: #3b77da;
     transition-duration: 150;
 }
 
@@ -263,7 +253,7 @@ StScrollBar StButton#vhandle:hover {
     -slider-height: 4px;
     -slider-background-color: rgba(0, 0, 0, 0);
     -slider-border-color: rgba(0, 0, 0, 0);
-    -slider-active-background-color: #accd8a;
+    -slider-active-background-color: #419be1;
     -slider-active-border-color: rgba(0, 0, 0, 0);
     -slider-border-width: 1px;
     -slider-handle-radius: 6px;
@@ -302,16 +292,16 @@ StScrollBar StButton#vhandle:hover {
 }
 
 #panel:highlight {
-    background-color: #accd8a;
+    background-color: #3b77da;
 }
 
 .panel-dummy {
-    border: 1px solid rgba(172, 205, 138, 1.0);
-    background-color: rgba(172, 205, 138, 0.6);
+    border: 1px solid rgba(59, 119, 218, 1.0);
+    background-color: rgba(59, 119, 218, 0.6);
 }
 
 .panel-dummy:entered {
-    background-color: rgba(172, 205, 138, 0.9);
+    background-color: rgba(59, 119, 218, 0.9);
 }
 
 #panelLeft,
@@ -683,7 +673,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .calendar-event-time-present:all-day {
-    color: #accd8a;
+    color: #3b77da;
 }
 
 .calendar-event-time-future {
@@ -716,7 +706,7 @@ StScrollBar StButton#vhandle:hover {
 
 .calendar-event-countdown:current {
       font-weight: bold;
-      color: #accd8a;
+      color: #3b77da;
 }
 
 .calendar-event-button:hover .calendar-event-time-past,
@@ -821,7 +811,7 @@ StScrollBar StButton#vhandle:hover {
 
 .calendar-day-base:hover {
     color: rgba(0, 0, 0, 0.7);
-    background: rgba(172, 205, 138, 0.3);
+    background: rgba(59, 119, 218, 0.3);
     font-weight: bold;
 }
 
@@ -862,7 +852,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .calendar-today {
-    background: rgba(172, 205, 138, 0.3);
+    background: rgba(59, 119, 218, 0.3);
 }
 
 .calendar-today:selected {
@@ -1947,7 +1937,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .workspace-graph .workspace:active .windows {
-    -active-window-background: rgba(172, 205, 138, 1.0);
+    -active-window-background: rgba(59, 119, 218, 1.0);
     -active-window-border: rgba(0, 0, 0, 0.9);
     -inactive-window-background: rgba(170, 170, 170, 1.0);
     -inactive-window-border: rgba(0, 0, 0, 0.7);
@@ -2046,7 +2036,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .applet-box:highlight {
-    background-color: #accd8a;
+    background-color: #3b77da;
 }
 
 .applet-box:active {
@@ -2223,7 +2213,7 @@ StScrollBar StButton#vhandle:hover {
 
 .osd-window .level-bar {
     border-radius: 0.3em;
-    background-color: rgb(172, 205, 138);
+    background-color: rgb(59, 119, 218);
 }
 
 /* ===================================================================
@@ -2231,13 +2221,13 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 .tile-preview,
 .tile-hud {
-    background-color: rgba(172, 205, 138, 0.4);
-    border: 1px solid rgba(172, 205, 138, 0.8);
+    background-color: rgba(59, 119, 218, 0.4);
+    border: 1px solid rgba(59, 119, 218, 0.8);
 }
 
 .tile-preview.snap,
 .tile-hud.snap {
-    background-color: rgba(172, 205, 138, 0.8);
+    background-color: rgba(59, 119, 218, 0.8);
 }
 
 .tile-hud:top {
