@@ -1009,7 +1009,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .switcher-list-item-container {
-    spacing: 8px;
+    spacing: 0px;
 }
 
 .thumbnail-scroll-gradient-left {
