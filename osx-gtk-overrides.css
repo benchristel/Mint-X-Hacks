@@ -1,3 +1,22 @@
+.nemo-window.nemo-desktop-window notebook,
+.nemo-window.nemo-desktop-window paned,
+NemoDesktopWindow GtkPaned {
+	background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.17),
+      rgba(0, 0, 0, 0.10) 8px,
+      rgba(0, 0, 0, 0.02) 20px,
+      rgba(0, 0, 0, 0) 30px
+    );
+}
+
+.nemo-desktop-window,
+.nemo-desktop-window:backdrop
+{
+  box-shadow: none;
+}
+
 .nemo-desktop.nemo-canvas-item {
   color: #fff;
   border-radius: 3px;
