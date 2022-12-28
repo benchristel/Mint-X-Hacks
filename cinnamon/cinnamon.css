@@ -362,7 +362,7 @@ StScrollBar StButton#vhandle:hover {
     background-gradient-start: rgba(220, 220, 220, 0.9);
     background-gradient-end: rgba(180, 180, 180, 0.9); */
     border-image:  url("background-assets/panel-bg.png") 0;
-    box-shadow: 0px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
 }
 
 .panel-left,
