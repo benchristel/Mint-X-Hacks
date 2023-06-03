@@ -520,6 +520,24 @@ combobox arrow {
  * Dialogs *
  ***********/
 
+messagedialog {
+    font-family: 'Lucida Grande';
+    background: #f00;
+    font-size: 12px;
+}
+
+messagedialog box.dialog-vbox {
+    padding-top: 10px;
+}
+
+messagedialog box.dialog-vbox > box > image {
+    padding-right: 6px;
+}
+
+messagedialog box.dialog-vbox > box > box:last-child {
+    padding-top: 3px;
+}
+
 /*********
  * entry *
  *********/
